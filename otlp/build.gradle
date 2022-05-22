@@ -13,3 +13,12 @@ dependencies {
     //pull in the autoconfigure extension so we parse the `otel.resource.attributes` system property used in the example.
     implementation("io.opentelemetry:opentelemetry-sdk-extension-autoconfigure")
 }
+
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
+}
+
+task prepareKotlinBuildScriptModel {
+
+}
+
